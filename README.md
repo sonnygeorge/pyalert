@@ -1,13 +1,11 @@
 <!-- omit in toc -->
 # :moyai: pyalert
 
-
 [![pypi](https://img.shields.io/pypi/v/pyalert.svg)](https://pypi.python.org/pypi/pyalert)
 [![python](https://img.shields.io/pypi/pyversions/pyalert.svg)](https://pypi.python.org/pypi/pyalert)
 [![code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![code coverage](https://codecov.io/gh/sonnygeorge/pyalert/branch/master/graph/badge.svg)](https://codecov.io/gh/sonnygeorge/pyalert)
 [![pre-commit ci](https://results.pre-commit.ci/badge/github/sonnygeorge/pyalert/master.svg)](https://results.pre-commit.ci/badge/github/sonnygeorge/pyalert/master)
-
 
 `pyalert` is a lightweight framework that empowers you to stay on top of what data is flowing through your Python code.
 
@@ -25,7 +23,6 @@ _______
 - [:brain: Further Thinking](#brain-further-thinking)
 - [:construction: Roadmap](#construction-roadmap)
 - [:handshake: Contribution](#handshake-contribution)
-
 
 _______
 
@@ -49,7 +46,7 @@ def bike_race(bikers: List[Biker]) -> str:
 
 Instead of cluttering your code with complex catching logic and `log`/`print` statements to indicate when certain occurances arise, `pyalert` facilitates an intuitive segregation of such concerns with a unit-test-like design pattern...
 
-As is often done with unit tests, let's define a class that contains our alerts...
+As would often be the case with unit tests, let's define a class that contains our alerts...
 
 Note how we use the `@alert_conf` decorator to configure the runtime behavior of each alert method...
 
@@ -80,7 +77,6 @@ class BikeRaceAlerts(PyAlerts):
         msg = "The winner announcement came out unusually verbose!"
         assert len(return_value) < 120, msg
 ```
-
 
 Lastly, we'll decorate our original `bike_race` function with the `@pyalert` decorator and pass `BikeRaceAlerts` as the argument:
 
