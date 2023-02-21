@@ -26,6 +26,13 @@ _______
 
 _______
 
+<!-- omit in toc -->
+## :wrench: Installation
+
+```bash
+pip install pyalert
+```
+
 ## :gear: How Does It Work?
 
 Suppose you are building software that involves processing data from a bike race...
