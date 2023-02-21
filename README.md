@@ -183,6 +183,7 @@ Since the only boilerplate required to use `pyalerts` is a simple `@pyalert` dec
 - [ ] consider solutions that absolve the need to have a decorator on your function in the first place - i.e. `class BikeRaceAlerts(PyAlerts, func=bike_race):`
 - [ ] :exclamation: CI pipeline
 - [ ] :exclamation: Docs
+- [ ] :exclamation: Determine and include compatible Python versions
 
 #### other to-do
 
