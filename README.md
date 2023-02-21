@@ -180,13 +180,13 @@ Since the only boilerplate required to use `pyalerts` is a simple `@pyalert` dec
 
 - [ ] :exclamation: Conceive/implement integration strategy with logging
 - [ ] pass a callable to alert_conf() to handle the alert? i.e. '@alert_conf(on_alert=send_slack_message)'
-- [ ] 
+- [ ] consider solutions that absolve the need to have a decorator on your function in the first place - i.e. `class BikeRaceAlerts(PyAlerts, func=bike_race):`
 - [ ] :exclamation: CI pipeline
 - [ ] :exclamation: Docs
 
 #### other to-do
 
-- [ ] change alert_conf "takes" arg to enum
+- [ ] change alert_conf "takes" arg-type to enum
 - [ ] pyproject.toml instead of setup.py
 - [ ] define project goals more clearly
 
